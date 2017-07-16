@@ -5,3 +5,48 @@
   text-decoration: none;
   color: #333;
 }
+html,
+body {
+  height: 100%;
+}
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.header {
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.header .item {
+  flex: 1;
+  font-size: 0.37333333rem;
+  padding: 0.21333333rem 0;
+  border-left: none;
+}
+.header .item + .item {
+  border-left: 1px solid #ddd;
+}
+.main {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0.26666667rem;
+  font-size: 0.32rem;
+}
+.footer {
+  display: flex;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.footer .item {
+  flex: 1;
+  font-size: 0.37333333rem;
+  padding: 0.21333333rem 0;
+  border-left: none;
+}
+.footer .item + .item {
+  border-left: 1px solid #ddd;
+}
