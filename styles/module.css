@@ -36,6 +36,9 @@ body {
   margin: 0.26666667rem;
   font-size: 0.32rem;
 }
+.main p {
+  color: #f00;
+}
 .footer {
   display: flex;
   text-align: center;
