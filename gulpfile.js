@@ -9,9 +9,9 @@ gulp.task('flex', function () {
         .pipe(gulp.dest('./styles')); //将会在src/css下生成相应的css文件
 });
 
-gulp.task('default',['flex', 'elseTask']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
+gulp.task('default',['watchLess']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
 
 gulp.task('watchLess',function(){
 //监听所有less文件，如果有变化，则执行flex编译方法
- gulp.watch(['./less/*.less'],['flex']);
+ gulp.watch('./less/*.less',['flex']);
 });

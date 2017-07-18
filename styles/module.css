@@ -12,7 +12,7 @@ body {
 .container {
   display: -webkit-flex;
   -webkit-flex-direction: column;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   height: 100%;
 }
@@ -49,4 +49,11 @@ body {
 }
 .footer .item + .item {
   border-left: 1px solid #ddd;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
 }
